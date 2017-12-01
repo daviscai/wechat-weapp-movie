@@ -11,9 +11,9 @@
   </view>
 
   <!-- 未点评 -->
-  <view class="zan-row" hidden>
+  <view class="zan-row">
     <view class="zan-col zan-col-24 right">
-      一句话点评<view class="zan-icon zan-col-4 zan-icon-edit zan-col-offset-1 icon-color"> 点评</view>
+      一句话点评<view class="zan-icon zan-col-4 zan-icon-edit zan-col-offset-1 icon-color" bindtap="toggleCommentPopup"> 点评</view>
     </view>
   </view>
 
@@ -30,7 +30,7 @@
       </view>
       <view class="comment-gray comment-mini-text">10月18日 14:23</view>
       <view class='comment-text'>实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事</view>
-      <view class="zan-icon zan-icon-edit icon-color"> 编辑</view>
+      <view class="zan-icon zan-icon-edit icon-color" bindtap="toggleCommentPopup"> 编辑</view>
     </view>
   </view>
 
@@ -87,14 +87,14 @@
   <!-- 想看，看过 -->
   <view class="zan-panel fix">
     <view class="zan-row">
-      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn ">想看</button></view>
-      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn zan-btn--warn">看过</button></view>
+      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn " bindtap="toggleStoryPopup">想看</button></view>
+      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn zan-btn--warn">看过(换一个)</button></view>
     </view>
   </view>
 
   <!-- 评论弹窗 -->
-  <view class="zan-dialog zan-dialog--show" hidden>
-    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog  {{ showCommentPopup ? 'zan-dialog--show' : ''}} ">
+    <view class="zan-dialog__mask" bindtap="toggleCommentPopup" />
     <view class="zan-dialog__container">
       <view class="form-row">
         <input placeholder="打分，1-100分" type="number" auto-focus confirm-type="next" />
@@ -112,8 +112,8 @@
   </view>
 
   <!-- 留言弹窗 -->
-  <view class="zan-dialog zan-dialog--show" hidden>
-    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog {{ showStoryPopup ? 'zan-dialog--show' : ''}} ">
+    <view class="zan-dialog__mask" bindtap="toggleStoryPopup" />
     <view class="zan-dialog__container">
       <view class="form-row text-middle">
         你有故事，叔叔有票！

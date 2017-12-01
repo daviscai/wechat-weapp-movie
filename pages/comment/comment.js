@@ -4,42 +4,33 @@
 var app = getApp()
 Page({
 	data: {
-		//films: [],
-		//hasMore: true,
-		//showLoading: true,
-		//start: 0,
-		//bannerList: config.bannerList
+    showCommentPopup: false,
+    showStoryPopup: false
 	},
   // 页面加载
 	onLoad: function() {
 		var that = this
-		//wx.showNavigationBarLoading()
-		// app.getCity(function(){
-		// 	wx.hideNavigationBarLoading()
-		// 	wx.setNavigationBarTitle({
-		// 		title: '正在热映 - ' + config.city
-		// 	})
-		// 	douban.fetchFilms.call(that, config.apiList.popular, that.data.start)
-		// })
 	},
   // 下拉加载更多
 	onPullDownRefresh: function() {
-		// var that = this
-		// that.setData({
-		// 	films: [],
-		// 	hasMore: true,
-		// 	showLoading: true,
-		// 	start: 0
-		// })
-		// this.onLoad()
+	
 	},
   // 上拉加载更多
 	onReachBottom: function() {
-		// var that = this
-		// if (!that.data.showLoading) {
-		// 	douban.fetchFilms.call(that, config.apiList.popular, that.data.start)
-		// }
-	}
+		
+	},
+
+  toggleCommentPopup() {
+    this.setData({
+      showCommentPopup: !this.data.showCommentPopup
+    });
+  },
+
+  toggleStoryPopup() {
+    this.setData({
+      showStoryPopup: !this.data.showStoryPopup
+    });
+  }
 
 	// viewFilmDetail: function(e) {
 	// 	var data = e.currentTarget.dataset;
