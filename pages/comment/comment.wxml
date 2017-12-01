@@ -1,0 +1,133 @@
+<view class="container">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"   poster="https://img3.doubanio.com/view/photo/raw/public/p2391455936.jpg" >
+  </video>
+
+  <!-- 电影标题 -->
+  <view class="zan-row">
+    <view class="zan-col zan-col-18 zan-col-offset-1 title">
+      <text selectable="true">电影名称惺惺惜惺惺电影名称惺惺惜惺惺</text>
+    </view>
+    <view class="zan-icon zan-col-4 zan-icon-like zan-col-offset-1 icon-color"> 分享</view>
+  </view>
+
+  <!-- 未点评 -->
+  <view class="zan-row" hidden>
+    <view class="zan-col zan-col-24 right">
+      一句话点评<view class="zan-icon zan-col-4 zan-icon-edit zan-col-offset-1 icon-color"> 点评</view>
+    </view>
+  </view>
+
+  <!-- 已点评 -->
+  <view class="zan-row commented">
+    <view class="zan-col zan-col-3 zan-col-offset-1">
+        <image src="http://wx.qlogo.cn/mmhead/0pygn8iaZdEe7XWiacmunK6HticdvumCstk1gEkjTZ3nHIdjblgKfDtdg/132" class="comment-user-avatar"></image>
+    </view> 
+    <view class="zan-col zan-col-20">
+      <view class="comment-gray">我的点评 
+        <view class='right-area'> 
+          <text class='score'>7.2</text>
+        </view>
+      </view>
+      <view class="comment-gray comment-mini-text">10月18日 14:23</view>
+      <view class='comment-text'>实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事</view>
+      <view class="zan-icon zan-icon-edit icon-color"> 编辑</view>
+    </view>
+  </view>
+
+  <!-- 展示朋友点评区 -->
+  <view class="comments">
+    <view class="zan-row comment text-middle">
+      <text>暂无点评！分享给小伙伴们~</text>
+    </view>
+    <view class="zan-row comment">
+      <view class="zan-col zan-col-3 zan-col-offset-1">
+        <image src="http://wx.qlogo.cn/mmhead/0pygn8iaZdEe7XWiacmunK6HticdvumCstk1gEkjTZ3nHIdjblgKfDtdg/132" class="comment-user-avatar"></image>
+      </view> 
+      <view class="zan-col zan-col-16 ">
+        <view class="comment-gray">运哥</view>
+        <view class="comment-gray comment-mini-text">4楼 10月18日 14:23</view>
+        <view class='comment-text'>实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事，实现财务自由可以做自己喜欢的事</view>
+      </view>
+    </view>
+
+    <view class="zan-row comment">
+      <view class="zan-col zan-col-3 zan-col-offset-1">
+        <image src="http://wx.qlogo.cn/mmhead/0pygn8iaZdEe7XWiacmunK6HticdvumCstk1gEkjTZ3nHIdjblgKfDtdg/132" class="comment-user-avatar"></image>
+      </view> 
+      <view class="zan-col zan-col-16 ">
+        <view class="comment-gray">运哥</view>
+        <view class="comment-gray comment-mini-text">4楼 10月18日 14:23</view>
+        <view class='comment-text'>实现财务自由可以做自己喜欢的事</view>
+      </view>
+    </view>
+
+    <view class="zan-row comment">
+      <view class="zan-col zan-col-3 zan-col-offset-1">
+        <image src="http://wx.qlogo.cn/mmhead/0pygn8iaZdEe7XWiacmunK6HticdvumCstk1gEkjTZ3nHIdjblgKfDtdg/132" class="comment-user-avatar"></image>
+      </view> 
+      <view class="zan-col zan-col-16 ">
+        <view class="comment-gray">运哥</view>
+        <view class="comment-gray comment-mini-text">4楼 10月18日 14:23</view>
+        <view class='comment-text'>实现财务自由可以做自己喜欢的事</view>
+      </view>
+    </view>
+
+    <view class="zan-row comment">
+      <view class="zan-col zan-col-3 zan-col-offset-1">
+        <image src="http://wx.qlogo.cn/mmhead/0pygn8iaZdEe7XWiacmunK6HticdvumCstk1gEkjTZ3nHIdjblgKfDtdg/132" class="comment-user-avatar"></image>
+      </view> 
+      <view class="zan-col zan-col-16 ">
+        <view class="comment-gray">运哥</view>
+        <view class="comment-gray comment-mini-text">4楼 10月18日 14:23</view>
+        <view class='comment-text'>实现财务自由可以做自己喜欢的事</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 想看，看过 -->
+  <view class="zan-panel fix">
+    <view class="zan-row">
+      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn ">想看</button></view>
+      <view class="zan-col zan-col-10 zan-col-offset-1"><button class="zan-btn zan-btn--warn">看过</button></view>
+    </view>
+  </view>
+
+  <!-- 评论弹窗 -->
+  <view class="zan-dialog zan-dialog--show" hidden>
+    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+    <view class="zan-dialog__container">
+      <view class="form-row">
+        <input placeholder="打分，1-100分" type="number" auto-focus confirm-type="next" />
+      </view>
+
+      <view class="form-row">
+        <textarea class="comment-cont" placeholder="一句话短评" maxlength="120" />
+      </view>
+      
+      <view class="form-row">
+        <button class="zan-btn zan-btn--warn">提交点评</button>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 留言弹窗 -->
+  <view class="zan-dialog zan-dialog--show" hidden>
+    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+    <view class="zan-dialog__container">
+      <view class="form-row text-middle">
+        你有故事，叔叔有票！
+      </view>
+
+      <view class="form-row text-middle">
+        先测试的稍等是多少是多少的稍等是多少
+      </view>
+      
+      <view class="form-row">
+        <button class="zan-btn">留下故事</button>
+      </view>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,76 @@
+#myVideo{
+  width:100%;
+}
+
+.title{
+  height: 24px;
+  overflow: hidden;
+  font-size:18px;
+}
+
+.right{
+  text-align: right;
+  position: relative;
+  right: 8px;
+}
+
+.zan-row{
+  margin: 8px 0px;
+}
+
+.comments{
+  background: #F9F9F9;
+  margin-bottom: 60px;
+}
+
+.comment{
+  padding:20px 0px;
+}
+
+.comment-gray{
+  color: #555;
+}
+.comment-mini-text{
+    font-size:12px;
+}
+.comment-user-avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 200rpx;
+    box-shadow: 0 0 300rpx 100rpx rgba(255, 255, 255, .2), 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+.comment-text{
+  font-size:14px;
+  margin-top:5px;
+}
+
+.fix{
+  position:fixed;
+  bottom:0px;
+  width:100%;
+}
+
+.form-row{
+  margin: 20px;
+}
+
+.comment-cont{
+  height: 85px;
+}
+
+.text-middle{
+  text-align: center;
+}
+
+.right-area{
+  float: right;
+}
+
+.score{
+  font-size: 24px;
+  color: #f85;
+}
+
+.commented{
+  margin: 35px 10px 10px 0px;
+}
