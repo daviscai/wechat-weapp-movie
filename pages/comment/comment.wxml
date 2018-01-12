@@ -7,7 +7,7 @@
     <view class="zan-col zan-col-18 zan-col-offset-1 title">
       <text selectable="true">电影名称惺惺惜惺惺电影名称惺惺惜惺惺</text>
     </view>
-    <view class="zan-icon zan-col-4 zan-icon-like zan-col-offset-1 icon-color"> 分享</view>
+    <view class="zan-icon zan-col-4 zan-icon-like zan-col-offset-1 icon-color" bindtap='linkToShare'> 分享</view>
   </view>
 
   <!-- 未点评 -->

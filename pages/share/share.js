@@ -30,12 +30,6 @@ Page({
     this.setData({
       showStoryPopup: !this.data.showStoryPopup
     });
-  },
-
-  linkToShare: function(e) {
-    wx.navigateTo({
-      url: "../share/share"
-		})
   }
 
 	// viewFilmDetail: function(e) {

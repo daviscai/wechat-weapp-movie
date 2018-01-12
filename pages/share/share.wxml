@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="">
+     <image src="https://img3.doubanio.com/view/photo/raw/public/p2505546144.jpg" mode="aspectFill"  class="movie-cover"></image>
+  </view>
+
+</view>

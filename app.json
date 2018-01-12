@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/share/share",
     "pages/comment/comment",
     "pages/my/my"
   ],
@@ -17,7 +18,7 @@
     "backgroundColor": "#ffffff",
     "borderStyle": "white",
     "list": [{
-      "pagePath": "pages/comment/comment",
+      "pagePath": "pages/share/share",
       "iconPath": "dist/images/comment_icon.png",
       "selectedIconPath": "dist/images/comment_active_icon.png",
       "text": "短评"
